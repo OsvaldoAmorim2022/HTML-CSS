@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*  SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = Children (filho)
+        */
+        /*Estilo do body*/
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }    
+
+        /*Estilo da âncora (link)*/
+        a {
+            color: red; /*Cor do Link antes de ser clicado*/
+            text-decoration: none;/*Tirando o Underline do Link*/
+            font-weight: bold;/*Colocando Link em Negrito*/
+        }
+        
+        /*Estado do Link já visitado*/
+        a:visited {
+            color:darkred;  /*Cor do Link depois de visitado*/          
+        }
+
+        /*Estado do Link ao passar o mousee por cima*/
+        a:hover {
+            color: black;/*Cor do Link ao passar o mouse por cima*/
+            text-decoration: underline;/*Underline do Link ao passar o mouse por cima*/
+        }
+
+        /*Classe especial criado no link*/
+        .especial {
+            background-color: rgb(188, 97, 97);            
+        }
+
+        a:active {
+            color: yellow;/*Cor do link ao clicar nele*/
+        }
+
+        /*Indicação de link no final de cada link*/
+        /*Procurar no Goolgle Símbolos HTML5*/
+        .especial::before {
+            content: '⇒';
+        }
+        .especial::after {
+            content: '⇒';            
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" class="especial">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>

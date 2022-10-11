@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {/*box-level*/
+
+            /*display: inline;*/
+            background-color: lightgray;
+
+            /*As duas linhas abaixo são a box-sinze*/
+            height: 300px;
+            width: 300px;           
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+
+            /*Essas três linhas acima podem ser substituídas pelo shorthand
+            border: 10px solid darlslategray;     */
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /*Essas quatro linhas acima podem ser também substituídas pelo shorthand
+            padding; 10px 10px 10px 10px; 
+            E deve obedecer a sequência do relógio -> topo -> direita -> embaixo -> esquerda 
+            Se os valores em pixel forem todos iguais, o shorthand pode se resumir em 
+            padding: 10px; ele vai apontar esse valor para as quatro posições 
+            Quando se coloca dois valores:
+            padding: 10px 20px;
+            automaticamente vão ser lançados os valores da seguinte forma: 
+            padding-top: 10px
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-left: 20px*/
+
+            /*
+            margin-auto  =  usado para centralizar a 
+            */
+
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+            /*Essas quatro linhas da margin também podem ser simplificadas com o shorthand: 
+            margin: 20px 20px 40px 20px;
+            Pode-se também centralizar com a shorthand: 
+            margin: 20px auto 40px auto; dessa forma fica centralizada a caixa mantendo as posições
+            de cima e de baixo de acordo coom os valores descritos.
+            */
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            /*Utilizando shorthand para as três linhas de outline acima:border: 
+            outline: 5px dashed salmon;
+            Tamabém nessa ordem.*/
+        }
+        a {/* inline-level*/
+            /*Se quiser que o link fique em block use  o comando: 
+            display: block; assim a caixa do link ocupará de um lado ao outro*/
+            display: block;
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#"> link sãoexemplos de caixas inline-level</a>. Vamos ver comotudo isso funciona.</p>
+</body>
+</html>
