@@ -53,6 +53,7 @@ section.imagem {
 }
 
 section.imagem > p {
+    width: 400px;
     background-color: black;
 }    
 
