@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;            
+        }
+
+        table {
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse; /*collapse torna as células coladas e não separadas por espaço*/ 
+            
+        }        
+
+        tr.linha {
+            background-color: gray;
+        }
+        
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;/*Alinhamento horizontal*/
+            vertical-align: middle;/*Alinhamento vertical*/
+        }
+        td.dado {
+            background-color: yellow;
+        }
+
+        .numero {
+            text-align: right;/*Alinhamento para a classe "numero"*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--HIERARQUIA DE TABELAS
+        TABLE = Tabela
+            TABLE ROW = linha de tabela
+                TABLE HEADER = cabeçalho da tabela
+                TABLE DATA = dado da tabela
+    -->
+    <table>
+        <tr> <!-- Primeira linha-->
+            <td>A1</td><!--Dado-->
+            <td>B1</td><!--Dado-->
+            <td>C1</td><!--Dado-->
+
+            <!--"td" são células e o fechamento das "td ou "tr" não são obrigatórias-->
+
+        </tr>
+        <tr> <!-- Segunda linha com classe definida como "linha"-->
+            <td>A2</td><!--Dado-->
+            <td>B2</td><!--Dado-->
+            <td class="numero">C2</td><!--Dado-->
+        </tr>
+        <tr> <!--Terceira linha-->
+            <td>A3</td><!--Dado-->
+            <td>B3</td>
+            <td class="numero">C3</td><!--Exemplo de dado com classe definido como "dado"-->
+        </tr>
+        <tr> <!--Quarta linha-->
+            <td>A4</td><!--Dado-->
+            <td>B4</td><!--Dado-->
+            <td>C4</td><!--Dado-->
+        </tr>
+        
+    </table>
+</body>
+</html>
