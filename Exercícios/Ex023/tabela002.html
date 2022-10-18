@@ -32,6 +32,17 @@
             color: white;
         }
 
+        tbody > tr:nth-child(odd) {/* odd é ímpar em inglês e nesse caso coloca a cor branca na <tr> (linha)*/
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) { 
+            background-color: rgba(53, 45, 45, 0.342);
+        }
+
+    /*'tr:nth-child' é uma pseudo classe das tag '<tr>' que estão dentro de 'tbody'*/  
+    /* even é par em inglês e nesse caso coloca a côr cinza nas <tr> (linhas) com dados pares. No lugar de 'even' pode se usar '2n-1'. Usando somente 2n, será intercalada as cores entre duas linhas. Se usar '3n', será intercalada a côr de 3 em 3 e assim por diante.*/      
+
         td.num {
             text-align: right;
         }
