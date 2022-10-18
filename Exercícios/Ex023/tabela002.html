@@ -20,6 +20,13 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
@@ -34,6 +41,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!--ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -42,10 +50,11 @@
                 TR, TD, TH
             -->
 <table>
+    <caption>População das Unidades Federativas</caption><!--Essa Tag é a legenda da tabela e pode ficar em qualquer lugar do código, porém só vai aparecer no topo da tabela-->
     <thead>
         <tr>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
         </tr>
     </thead>
     <tbody>
@@ -159,7 +168,7 @@
         </tr>
     </tbody>
     <tfoot>
-        <th>Total de Habitantes</th>
+        <th scope="row">Total de Habitantes</th>
         <td class="num"><strong>210 147 125</strong></td>
     </tfoot>
 </table>            
